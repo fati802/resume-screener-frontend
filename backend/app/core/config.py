@@ -23,7 +23,7 @@ class Settings(BaseSettings):
 
     # --- Database ---
     DATABASE_URL: str = Field(
-        default="sqlite+aiosqlite:///./resume_screener.db",
+        default="postgresql+asyncpg://postgres.nkuipwenddmkchhxeqpj:DBqMSzO47zKEFQY7@aws-1-ap-northeast-2.pooler.supabase.com:6543/postgres",
         description="Async PostgreSQL connection string",
     )
 
